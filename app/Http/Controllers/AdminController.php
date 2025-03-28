@@ -47,22 +47,7 @@ class AdminController extends Controller
     return redirect()->back()->with('success', 'تم رفع الصورة وحفظ البيانات بنجاح');
        
     }
-    // public function uploadfood(Request $request)
-    // {
-        // $data=new food;
-    
-        // $image=$request->image;
-        // $imagename=time().'.'.$image->getClientOriginalExtension();
-        
-        // $request->image->move('foodimage',$imagename);
-        // $data->image=$imagename;
-    
-        // $data->title=$request->title;
-        // $data->price=$request->price;
-        // $data->description=$request->description;
-        // $data->save();
-       
-        // return redirect()->back()->with('error');
+  
       public function uploadfood(Request $request)
       {
         $data = new food;
